@@ -1,20 +1,18 @@
 package address;
 
-import address.model.Person;
-import address.view.PersonOverviewController;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
-
 import java.io.IOException;
 
+import address.model.Person;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import address.model.Person;
+import address.view.PersonOverviewController;
 
 public class MainApp extends Application {
 
@@ -103,7 +101,6 @@ public class MainApp extends Application {
 
     /**
      * Returns the main stage.
-     *
      * @return
      */
     public Stage getPrimaryStage() {

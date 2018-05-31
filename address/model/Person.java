@@ -1,8 +1,5 @@
 package address.model;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.StringProperty;
-
 import java.time.LocalDate;
 
 import javafx.beans.property.IntegerProperty;
@@ -14,6 +11,8 @@ import javafx.beans.property.StringProperty;
 
 /**
  * Model class for a Person.
+ *
+ * @author Marco Jakob
  */
 public class Person {
 

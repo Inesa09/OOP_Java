@@ -7,15 +7,13 @@ import javafx.scene.control.TableView;
 import address.MainApp;
 import address.model.Person;
 
-import java.time.LocalDate;
-
 public class PersonOverviewController {
     @FXML
-    private TableView<Person> personTable = new TableView<>();
+    private TableView<Person> personTable;
     @FXML
-    private TableColumn<Person, String> firstNameColumn = new TableColumn<Person, String>();
+    private TableColumn<Person, String> firstNameColumn;
     @FXML
-    private TableColumn<Person, String> lastNameColumn = new TableColumn<Person, String>();
+    private TableColumn<Person, String> lastNameColumn;
 
     @FXML
     private Label firstNameLabel;
@@ -49,10 +47,6 @@ public class PersonOverviewController {
         // Initialize the person table with the two columns.
         firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
         lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
-//        streetColumn.setCellValueFactory(cellData -> cellData.getValue().streetProperty());
-//        cityColumn.setCellValueFactory(cellData -> cellData.getValue().cityProperty());
-//        postalCodeColumn.setCellValueFactory(cellData -> cellData.getValue().postalCodeProperty().asObject());
-//        birthdayColumn.setCellValueFactory(cellData -> cellData.getValue().birthdayProperty());
     }
 
     /**
